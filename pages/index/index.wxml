@@ -1,0 +1,30 @@
+<!--index.wxml-->
+<view class="wrap">
+  <view class="title">闲置广场</view>
+  <view class="goods-list">
+    <view class="goods-item">
+      <view class="item item-l">图片</view>
+      <view class="item item-r">
+        <text>阿拉德大陆，是网络游戏《地下城与勇士》游戏中的主体设定，是玩家控制的冒险家主要的活动地区。阿拉德大陆的文明之光最初是由精灵和人类共同创造的，但是后来由于双方关系破裂，精灵逐渐从阿拉德大陆上消失。</text>
+      </view>
+    </view>
+    <view class="goods-item">
+      <view class="item item-l">图片</view>
+      <view class="item item-r">
+        <text>玩家控制的冒险家主要的活动地区。阿拉德大陆的文明之光最初是由精灵和人类共同创造的，但是后来由于双方关系破裂，精灵逐渐从阿拉德大陆上消失。</text>
+      </view>
+    </view>
+    <view class="goods-item">
+      <view class="item item-l">图片</view>
+      <view class="item item-r">
+        <text>《地下城与勇士》游戏中的主体设定，是玩家控制的冒险家主要的活动地区。阿拉德大陆的文明之光最初是由精灵和人类共同创造的，但是后来由于双方关系破裂，精灵逐渐从阿拉德大陆上消失。</text>
+      </view>
+    </view>
+    <view class="goods-item">
+      <view class="item item-l">图片</view>
+      <view class="item item-r">
+        <text>阿拉德游戏中的主体设定，是玩家控制的冒险家主要的活动地区。阿拉德大陆的文明之光最初是由精灵和人类共同创造的，但是后来由于双方关系破裂，精灵逐渐从阿拉德大陆上消失。</text>
+      </view>
+    </view>
+  </view>
+</view>

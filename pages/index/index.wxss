@@ -1,0 +1,29 @@
+/**index.wxss**/
+.wrap .title{
+  text-align: center;
+   margin: 30rpx 0; 
+}
+.goods-list .goods-item{
+  display: flex;
+}
+.goods-list .goods-item .item{
+  height: 200rpx;
+  margin-bottom: 20rpx;
+}
+.goods-list .goods-item .item-l{
+  flex: 1;
+  border-right: 1rpx solid #eee;
+  line-height: 200rpx;
+  text-align: center;
+}
+.goods-list .goods-item .item-r{
+  flex: 2;
+}
+.goods-list .goods-item .item-r text{
+  line-height:50rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:4; 
+}
