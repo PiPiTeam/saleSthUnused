@@ -10,11 +10,12 @@
   height: 200rpx;
   margin-bottom: 20rpx;
 }
+.goods-list .goods-item .item image{
+  width: 200rpx;
+  height: 200rpx;
+}
 .goods-list .goods-item .item-l{
   flex: 1;
-  border-right: 1rpx solid #eee;
-  line-height: 200rpx;
-  text-align: center;
 }
 .goods-list .goods-item .item-r{
   flex: 2;
@@ -26,4 +27,5 @@
   display:-webkit-box; 
   -webkit-box-orient:vertical;
   -webkit-line-clamp:4; 
+  text-indent:40px;
 }
