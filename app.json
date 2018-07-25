@@ -1,12 +1,13 @@
 {
   "pages": [
+    "pages/yiyan/yiyan",
     "pages/index/index",
     "pages/my/index"
   ],
   "window": {
-    "navigationBarTitleText": "弦置宝",
+    "navigationBarTitleText": "hitokoto",
     "navigationBarTextStyle": "black",
-    "navigationBarBackgroundColor": "#FFD700"
+    "navigationBarBackgroundColor": "#fff"
   },
   "tabBar": {
     "backgroundColor": "#FFF",
@@ -14,12 +15,16 @@
 
     "list": [
       {
+        "pagePath": "pages/yiyan/yiyan",
+        "iconPath": "/image/heart.png",
+        "selectedIconPath": "/image/heart_active.png",
+        "text": "一言"
+      },{
         "pagePath": "pages/index/index",
         "iconPath": "/image/square.png",
         "selectedIconPath": "/image/square_active.png",
         "text": "广场"
-      },
-      {
+      },{
         "pagePath": "pages/my/index",
         "iconPath": "/image/my.png",
         "selectedIconPath": "/image/my_active.png",

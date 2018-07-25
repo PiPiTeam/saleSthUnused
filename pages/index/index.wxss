@@ -1,8 +1,4 @@
 /**index.wxss**/
-.wrap .title{
-  text-align: center;
-   margin: 30rpx 0; 
-}
 .goods-list .goods-item{
   display: flex;
 }

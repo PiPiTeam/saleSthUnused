@@ -1,0 +1,33 @@
+/* pages/yiyan/yiyan.wxss */
+page,.wrap{
+  height:100%;
+}
+.wrap{
+  background-image: url('http://ofj8a2i7u.bkt.clouddn.com/image/ph/bg.jpgbg.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.mod-yiyan{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  color: #fff;
+  overflow: hidden;
+}
+.mod-yiyan .yiyan-txt{
+  display:block;
+  width: 88%;
+  font-size: 20px;
+  margin: 0 auto;
+  text-align:center;
+}
+.left-parenthesis,.right-parenthesis{
+  display: block;
+  font-size: 30px;
+}
+.left-parenthesis{
+  margin-top: 30%;
+}
+.right-parenthesis{
+  float: right;
+}
