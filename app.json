@@ -1,8 +1,11 @@
 {
   "pages": [
+    "pages/my/index",
     "pages/yiyan/yiyan",
     "pages/index/index",
-    "pages/my/index"
+    "pages/favorites/favorites",
+    "pages/debunk/debunk",
+    "pages/chat/chat"
   ],
   "window": {
     "navigationBarTitleText": "hitokoto",

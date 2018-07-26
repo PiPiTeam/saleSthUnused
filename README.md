@@ -1,2 +1,5 @@
-# saleSthUnused
-a miniProgram, show ur Idle goods to others
+# Hitokito
+
+一个句子
+
+未完待续..

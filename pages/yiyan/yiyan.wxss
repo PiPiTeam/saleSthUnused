@@ -17,13 +17,13 @@ page,.wrap{
 .mod-yiyan .yiyan-txt{
   display:block;
   width: 88%;
-  font-size: 20px;
+  font-size: 48rpx;
   margin: 0 auto;
   text-align:center;
 }
 .left-parenthesis,.right-parenthesis{
   display: block;
-  font-size: 30px;
+  font-size: 80rpx;
 }
 .left-parenthesis{
   margin-top: 30%;

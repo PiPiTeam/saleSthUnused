@@ -12,8 +12,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.0.4",
-	"appid": "wx6ecdf04007908231",
-	"projectname": "%E5%BC%A6%E7%BD%AE%E5%AE%9D",
+	"appid": "wxc56d46c5fb6a06a2",
+	"projectname": "Hitokoto",
 	"isGameTourist": false,
 	"condition": {
 		"search": {

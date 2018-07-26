@@ -6,7 +6,8 @@ Page({
    */
   data: {
     yiyan: '',
-    source: ''
+    source: '',
+    yiyanTimer: ''
   },
 
   /**
@@ -15,7 +16,9 @@ Page({
   onLoad: function (options) {
     let _this = this;
     _this.getYiyan();
-    setInterval(_this.getYiyan,10000)
+    // _this.setData({
+    //   yiyanTimer: setInterval(_this.getYiyan, 10000)
+    // })
   },
 
   /**
@@ -29,21 +32,21 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-  
+    this.data.yiyanTimer = setInterval(this.getYiyan, 10000); 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-  
+    clearInterval(this.data.yiyanTimer)
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-  
+    clearInterval(this.data.yiyanTimer)
   },
 
   /**

@@ -23,5 +23,7 @@
   display:-webkit-box; 
   -webkit-box-orient:vertical;
   -webkit-line-clamp:4; 
-  text-indent:40px;
+  text-indent:60rpx;
+  font-size:30rpx;
+
 }

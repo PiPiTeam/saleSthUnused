@@ -1,3 +1,8 @@
 {
-  "navigationBarTitleText": "我的"
+  "navigationBarTitleText": "我的",
+  "usingComponents": {
+    "zan-cell-group": "/zanui/cell-group/index",
+    "zan-cell": "/zanui/cell/index",
+    "zan-icon": "/zanui/icon/index"
+  }
 }
