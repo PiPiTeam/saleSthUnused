@@ -75,7 +75,7 @@ Page({
   getYiyan: function() {
     let _this = this;
     wx.request({
-      url: 'http://er567.cn/api/yiyan',
+      url: 'https://er567.cn/api/yiyan',
       data: {},
       header: {
         'content-type': 'application/json'
