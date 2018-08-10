@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/my/index",
     "pages/yiyan/yiyan",
+    "pages/my/index",
     "pages/index/index",
     "pages/favorites/favorites",
     "pages/debunk/debunk",

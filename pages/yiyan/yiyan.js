@@ -82,7 +82,7 @@ Page({
       },
       success: function (res) {
         // console.log(res.statusCode) //200
-        console.log(res.data)
+        // console.log(res.data)
         _this.setData({
           yiyan: res.data.data.hitokoto
           // `from:${res.data.data.from}】`
