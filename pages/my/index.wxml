@@ -4,18 +4,18 @@
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
       <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname zan-font-20">{{userInfo.nickName}}</text>
+      <text class="userinfo-nickname van-font-20">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <zan-cell-group title-width="">
-    <zan-cell title="我的收藏" is-link url="/pages/favorites/favorites">
-      <zan-icon slot="icon" type="like-o"></zan-icon>
-    </zan-cell>
-    <zan-cell title="反馈吐槽" is-link url="/pages/debunk/debunk">
-      <zan-icon slot="icon" type="pending-evaluate"></zan-icon>
-    </zan-cell>
-    <zan-cell title="联系我们" is-link url="/pages/chat/chat">
-      <zan-icon slot="icon" type="phone"></zan-icon>
-    </zan-cell>
-  </zan-cell-group>
+  <van-cell-group title-width="">
+    <van-cell title="我的收藏" is-link url="/pages/favorites/favorites">
+      <van-icon slot="icon" name="like-o"></van-icon>
+    </van-cell>
+    <van-cell title="反馈吐槽" is-link url="/pages/debunk/debunk">
+      <van-icon slot="icon" name="pending-evaluate"></van-icon>
+    </van-cell>
+    <van-cell title="联系我们" is-link url="/pages/chat/chat">
+      <van-icon slot="icon" name="phone"></van-icon>
+    </van-cell>
+  </van-cell-group>
 </view>

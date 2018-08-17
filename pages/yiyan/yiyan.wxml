@@ -1,8 +1,8 @@
 <!--pages/yiyan/yiyan.wxml-->
 <view class='wrap'>
   <view class='mod-yiyan'>
-    <text class='left-parenthesis'>「</text>
-    <text class='yiyan-txt'>{{ yiyan }}</text>  
+    <text class='left-parenthesis'>「</text><br/>
+    <text class='yiyan-txt'>{{ yiyan }}</text>
     <text class='right-parenthesis'>」</text>
   </view>
 </view>

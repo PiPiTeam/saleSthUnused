@@ -16,9 +16,6 @@ Page({
   onLoad: function (options) {
     let _this = this;
     _this.getYiyan();
-    // _this.setData({
-    //   yiyanTimer: setInterval(_this.getYiyan, 10000)
-    // })
   },
 
   /**
@@ -53,7 +50,7 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-  
+    this.getYiyan()
   },
 
   /**
@@ -83,10 +80,8 @@ Page({
       success: function (res) {
         // console.log(res.statusCode) //200
         // console.log(res.data)
-        _this.setData({
-          yiyan: res.data.data.hitokoto
-          // `from:${res.data.data.from}】`
-        })
+        wx.stopPullDownRefresh();
+        _this.setData({ yiyan: res.data.data.hitokoto})
       }
     })
   }

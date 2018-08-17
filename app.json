@@ -10,7 +10,8 @@
   "window": {
     "navigationBarTitleText": "hitokoto",
     "navigationBarTextStyle": "black",
-    "navigationBarBackgroundColor": "#fff"
+    "navigationBarBackgroundColor": "#fff",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "backgroundColor": "#FFF",

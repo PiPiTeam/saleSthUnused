@@ -1,5 +1,5 @@
 /**app.wxss**/
-@import "zanui/index.wxss";
+@import "/vant-weapp/common/index.wxss";
 
 .container {
   height: 100%;

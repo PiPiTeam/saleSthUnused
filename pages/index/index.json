@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "广场"
+  "navigationBarTitleText": "广场",
+  "usingComponents": {
+    "van-notify": "/vant-weapp/notify/index"
+  }
 }
