@@ -30,13 +30,14 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    this.data.yiyanTimer = setInterval(this.getYiyan, 10000); 
+    this.data.yiyanTimer = setInterval(this.getYiyan, 8000); 
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
+    // this.setData({ yiyanTimer: null });
     clearInterval(this.data.yiyanTimer)
   },
 
@@ -88,17 +89,16 @@ Page({
   },
 
   clickFn: function() {
-    console.log(this.data.isPlay)
+    clearInterval(this.data.yiyanTimer);
     if (this.data.isPlay) {
       this.data.dragImg = '/image/play.png';
-      clearInterval(this.data.yiyanTimer);
       wx.showToast({
         title: "已暂停",
         duration: 1000,
       })
     }else{
       this.data.dragImg = '/image/stop.png';
-      this.data.yiyanTimer = setInterval(this.getYiyan, 10000);
+      this.data.yiyanTimer = setInterval(this.getYiyan, 8000);
       wx.showToast({
         title: "已开始",
         duration: 1000,
