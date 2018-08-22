@@ -7,7 +7,8 @@ Page({
   data: {
     yiyan: '',
     source: '',
-    yiyanTimer: ''
+    yiyanTimer: '',
+    isPlay: true
   },
 
   /**
@@ -84,5 +85,25 @@ Page({
         _this.setData({ yiyan: res.data.data.hitokoto})
       }
     })
+  },
+
+  clickFn: function() {
+    console.log(this.data.isPlay)
+    if (this.data.isPlay) {
+      this.data.dragImg = '/image/play.png';
+      clearInterval(this.data.yiyanTimer);
+      wx.showToast({
+        title: "已暂停",
+        duration: 1000,
+      })
+    }else{
+      this.data.dragImg = '/image/stop.png';
+      this.data.yiyanTimer = setInterval(this.getYiyan, 10000);
+      wx.showToast({
+        title: "已开始",
+        duration: 1000,
+      })
+    }
+    this.setData({ isPlay: !this.data.isPlay });
   }
 })

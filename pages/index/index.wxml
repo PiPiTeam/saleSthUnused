@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view class="wrap">
-  <view class="goods-list">
+  <scroll-view scroll-y class="goods-list">
     <view class="goods-item">
       <view class="item item-l">
         <image src='/image/1.png'></image>
@@ -49,6 +49,6 @@
         <text>阿拉德游戏中的主体设定，是玩家控制的冒险家主要的活动地区。阿拉德大陆的文明之光最初是由精灵和人类共同创造的，但是后来由于双方关系破裂，精灵逐渐从阿拉德大陆上消失。</text>
       </view>
     </view>
-  </view>
+  </scroll-view>
   <van-notify id="custom-selector" />
 </view>

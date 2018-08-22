@@ -5,4 +5,5 @@
     <text class='yiyan-txt'>{{ yiyan }}</text>
     <text class='right-parenthesis'>」</text>
   </view>
+  <movable bind:playStop="clickFn"></movable>
 </view>

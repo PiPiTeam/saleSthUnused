@@ -1,1 +1,5 @@
-{}
+{
+  "usingComponents": {
+    "movable": "../../components/movable/movable"
+  }
+}
