@@ -7,15 +7,18 @@
       <text class="userinfo-nickname van-font-20">{{userInfo.nickName}}</text>
     </block>
   </view>
+  <view class="tools">
+    <view></view>
+  </view>
   <van-cell-group title-width="">
     <van-cell title="我的收藏" is-link url="/pages/favorites/favorites">
-      <van-icon slot="icon" name="like-o"></van-icon>
+      <van-icon slot="icon" name="like-o" style="margin-right:10rpx;"></van-icon>
     </van-cell>
     <van-cell title="反馈吐槽" is-link url="/pages/debunk/debunk">
-      <van-icon slot="icon" name="pending-evaluate"></van-icon>
+      <van-icon slot="icon" name="pending-evaluate" style="margin-right:10rpx;"></van-icon>
     </van-cell>
     <van-cell title="联系我们" is-link url="/pages/chat/chat">
-      <van-icon slot="icon" name="phone"></van-icon>
+      <van-icon slot="icon" name="phone" style="margin-right:10rpx;"></van-icon>
     </van-cell>
   </van-cell-group>
 </view>

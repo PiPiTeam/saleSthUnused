@@ -110,7 +110,59 @@ Page({
       scrollLeft: this.data.scrollLeft + 10
     })
   },
+  //上传头像
+  uploadImage: function () {
+    var that = this
+    // 选择图片
+    wx.chooseImage({
+      count: 1,
+      sizeType: ['compressed'],
+      sourceType: ['album', 'camera'],
+      success: function (res) {
+        util.showLoading('上传中...');
+        var filePath = res.tempFilePaths[0];
+        var token = wx.getStorageSync('token');
+        var openid = wx.getStorageSync('openid');
+        util.showAlert('上传成功！');
+        that.setData({'cardData.avatar': filePath})
+        wx.hideLoading()
+        // wx.uploadFile({
+        //   url: config.service.imageUploadUrl + "?type=logo",
+        //   filePath: filePath,
+        //   header: {
+        //     'X-AUTH-TOKEN': token,
+        //     'X-AUTH-OPENID': openid
+        //   },
+        //   name: 'media',
+        //   success: function (res) {
+        //     wx.hideLoading()
+        //     console.log(res)
+        //     res = JSON.parse(res.data)
+        //     if (res.errorCode == 0) {
+        //       util.showAlert('上传成功！', function () {
+        //       });
+        //       that.setData({
+        //         'cardData.avatar': res.data
+        //       })
+        //     } else {
+        //       util.showAlert('上传失败！')
+        //     }
+        //   },
+        //   fail: function (e) {
+        //     console.error(e)
+        //     wx.hideLoading()
+        //     util.showAlert('上传失败！')
+        //   }
+        // })
 
+      },
+      fail: function (e) {
+        console.log('选择头像失败！');
+        console.log(e);
+        wx.hideLoading()
+      }
+    })
+  },
   selectLabel: function (e) {
     var index = e.currentTarget.dataset.index;
     var lableList = this.data.labelList;
@@ -169,7 +221,18 @@ Page({
       'radioItems': radioItems
     });
   },
-
+  //修改行业
+  bindBussinessChange: function(e){
+    var index = e.detail.value;
+    var businessName = this.data.businessList[index];
+    if (index == 0) {
+      businessName = ''
+    }
+    this.setData({
+      'cardData.description': businessName,
+      'businessIndex': index,
+    });
+  },
   checkboxChange: function (e) {
     var checkboxItems = this.data.checkboxItems, values = e.detail.value;
     var agreement = 'N';
