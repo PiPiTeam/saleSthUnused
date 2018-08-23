@@ -8,7 +8,22 @@
     </block>
   </view>
   <view class="tools">
-    <view></view>
+    <view class="item-box">
+      <image src="/image/mingpian.png" mode="widthFix"></image>
+      <view class="item-name">名片</view>
+    </view>
+    <view class="item-box">
+      <image src="/image/mingpian.png" mode="widthFix"></image>
+      <view class="item-name">名片</view>
+    </view>
+    <view class="item-box">
+      <image src="/image/mingpian.png" mode="widthFix"></image>
+      <view class="item-name">名片</view>
+    </view>
+    <view class="item-box">
+      <image src="/image/mingpian.png" mode="widthFix"></image>
+      <view class="item-name">名片</view>
+    </view>
   </view>
   <van-cell-group title-width="">
     <van-cell title="我的收藏" is-link url="/pages/favorites/favorites">

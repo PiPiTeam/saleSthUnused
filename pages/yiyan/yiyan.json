@@ -1,5 +1,6 @@
 {
   "usingComponents": {
     "movable": "../../components/movable/movable"
-  }
+  },
+  "enablePullDownRefresh": true
 }
