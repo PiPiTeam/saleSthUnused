@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/my/my",
     "pages/yiyan/yiyan",
+    "pages/my/my",
     "pages/index/index",
     "pages/favorites/favorites",
     "pages/ceartvCard/ceartvCard",
