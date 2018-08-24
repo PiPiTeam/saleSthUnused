@@ -9,20 +9,22 @@
   </view>
   <view class="tools">
     <view class="item-box">
-      <image src="/image/mingpian.png" mode="widthFix"></image>
-      <view class="item-name">名片</view>
+      <navigator url="/pages/ceartvCard/ceartvCard">
+        <image src="/image/mingpian.png" mode="widthFix"></image>
+        <view class="item-name">名片</view>
+      </navigator>
     </view>
-    <view class="item-box">
-      <image src="/image/mingpian.png" mode="widthFix"></image>
-      <view class="item-name">名片</view>
+    <view class="item-box" data-msg="blog" bindtap="showMsg">
+      <image src="/image/blog.png" mode="widthFix"></image>
+      <view class="item-name">博客</view>
     </view>
-    <view class="item-box">
-      <image src="/image/mingpian.png" mode="widthFix"></image>
-      <view class="item-name">名片</view>
+    <view class="item-box" data-msg="github" bindtap="showMsg">
+      <image src="/image/github.png" mode="widthFix"></image>
+      <view class="item-name">Github</view>
     </view>
-    <view class="item-box">
-      <image src="/image/mingpian.png" mode="widthFix"></image>
-      <view class="item-name">名片</view>
+    <view class="item-box" data-msg="wechat" bindtap="showMsg">
+      <image src="/image/wechat.png" mode="widthFix"></image>
+      <view class="item-name">微信</view>
     </view>
   </view>
   <van-cell-group title-width="">
@@ -37,3 +39,4 @@
     </van-cell>
   </van-cell-group>
 </view>
+<!-- <van-toast id="van-toast" /> -->

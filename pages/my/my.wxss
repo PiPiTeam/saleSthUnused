@@ -33,7 +33,7 @@
 }
 .tools .item-box image{
   width: 70%;
-
+  border-radius: 20rpx;
 }
 .tools .item-box .item-name{
   font-size: 24rpx;

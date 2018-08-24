@@ -1,11 +1,13 @@
 {
   "pages": [
-    "pages/my/index",
+    "pages/my/my",
     "pages/yiyan/yiyan",
     "pages/index/index",
     "pages/favorites/favorites",
-    "pages/debunk/debunk",
-    "pages/chat/chat"
+    "pages/ceartvCard/ceartvCard",
+    "pages/chat/chat",
+    "pages/blog/blog",
+    "pages/debunk/debunk"
   ],
   "window": {
     "navigationBarTitleText": "hitokoto",
@@ -15,20 +17,21 @@
   "tabBar": {
     "backgroundColor": "#FFF",
     "selectedColor": "#FFBB00",
-
     "list": [
       {
         "pagePath": "pages/yiyan/yiyan",
         "iconPath": "/image/heart.png",
         "selectedIconPath": "/image/heart_active.png",
         "text": "一言"
-      },{
+      },
+      {
         "pagePath": "pages/index/index",
         "iconPath": "/image/square.png",
         "selectedIconPath": "/image/square_active.png",
         "text": "广场"
-      },{
-        "pagePath": "pages/my/index",
+      },
+      {
+        "pagePath": "pages/my/my",
         "iconPath": "/image/my.png",
         "selectedIconPath": "/image/my_active.png",
         "text": "我的"
