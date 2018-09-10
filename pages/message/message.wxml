@@ -1,2 +1,19 @@
-<!--pages/message/message.wxml-->
-<text>pages/message/message.wxml</text>
+<wxs src="../../filter/index.wxs" module="Filter" />
+<block wx:if="{{isOpen}}">
+  <text class="status">{{statusMsg}}</text>
+</block>
+<block wx:else>
+  <text class="status red" bindtap='connectWss'>{{statusMsg}},点击重连</text>
+</block>
+<text style='font-size:30rpx;margin-left:30px;'>当前在线：{{count}}人</text>
+<!-- 聊天列表 -->
+<view wx:for="{{chatList}}" wx:key="index" wx:if="{{isUser&&item.msg}}">
+  <text class='user' wx:if="{{item.fd}}">游客{{item.fd}}：</text>
+  <text class='user-content'>{{Filter.getContent(item.msg)}}</text>
+  <text class='back' bindtap='deleteMsg'>撤回</text>
+</view>
+<view class='more' bindtap='getMoreChatList' wx:if="{{isShowMore}}">加载更多</view>
+<view class='user-input'>
+  <input bindinput='bindContent' bindconfirm='handleSendMessage' confirm-type='send' type='text' class='input' value="{{content}}"/>
+  <button bindtap="handleSendMessage" type='primary' class='send'>发送</button> 
+</view>

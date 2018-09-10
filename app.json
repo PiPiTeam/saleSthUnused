@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/yiyan/yiyan",
     "pages/message/message",
+    "pages/yiyan/yiyan",
     "pages/my/my",
     "pages/index/index",
     "pages/favorites/favorites",
@@ -27,8 +27,8 @@
       },
       {
         "pagePath": "pages/message/message",
-        "iconPath": "/image/square.png",
-        "selectedIconPath": "/image/square_active.png",
+        "iconPath": "/image/message.png",
+        "selectedIconPath": "/image/message_active.png",
         "text": "消息"
       },
       {

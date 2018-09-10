@@ -1,1 +1,31 @@
 /* pages/message/message.wxss */
+.back{
+  float: right;
+  color: orangered;
+}
+.status{
+  font-size:30rpx;
+  color:green;
+}
+.red{
+  color: red;
+}
+.user-input {
+  width: 100%;
+  position: fixed;
+  bottom: 2rpx;
+  display: flex;
+}
+.user-input .input{
+  height: 80rpx;
+  line-height: 80rpx;
+  flex: 1 0 70%;
+  border: 1rpx solid #000;
+  border-radius: 10rpx;
+}
+.user-input .send{
+  line-height:80rpx;
+  flex:1 0 25%;
+  text-align:center;
+  margin:0 10rpx;
+}

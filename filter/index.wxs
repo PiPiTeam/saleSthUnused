@@ -1,0 +1,16 @@
+var Filter = {
+
+  getContent: function (str) {
+    if (str == '' || str == undefined) return ''
+    var strParse = JSON.parse(str);
+    if (strParse.content) {
+      return strParse.content
+    }else{
+      return ''
+    }
+  }
+}
+
+module.exports = {
+  getContent: Filter.getContent
+}
