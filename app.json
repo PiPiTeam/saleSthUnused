@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/message/message",
     "pages/yiyan/yiyan",
+    "pages/message/message",
     "pages/my/my",
     "pages/index/index",
     "pages/favorites/favorites",

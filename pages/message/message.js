@@ -15,7 +15,11 @@ Page({
     statusMsg: '连接中...',
     input_value_content: '',
     UserChatList: [],
-    isUser: false
+    isUser: false,
+    showEmoji: true,
+    showTools: true,
+    scorllTop: 0,
+    animationData: ''
   },
 
   /**
@@ -37,6 +41,16 @@ Page({
     this.data.resource_id = options.resource_id;
 
     this.wssInit()
+  },
+  onReady: function () {
+    //创建动画
+    this.animation = wx.createAnimation({ timingFunction: 'ease-out', duration: 200 })
+    this.animation.translateY(0).step();
+    this.animationBack = wx.createAnimation({ duration: 0 });
+    this.animationBack.translateY(100).step();
+  },
+  onShareAppMessage: function () {
+    //分享
   },
   onShow: function () {
     !this.data.isOpen && this.connectWss();
@@ -177,15 +191,39 @@ Page({
     });
     connect();
   },
+  // 打开emoji
+  openEmojiBox: function () {
+    this.setData({
+      showEmoji: !this.data.showEmoji,
+      showTools: true
+    });
+    if (!this.data.showEmoji) this.setData({ scorllTop: 50 * 50 })//这里数值根据信息高度，也可以设足够大
+    this.setData({ animation: this.animationBack })
+    this.setData({ animation: this.animation })
+  },
+  // 打开更多操作
+  openToolsBox: function () {
+    this.setData({
+      showTools: !this.data.showTools,
+      showEmoji: true
+    });
+    if (!this.data.showTools) this.setData({ scorllTop: 50 * 50 })
+    this.setData({ animation: this.animationBack })
+    this.setData({ animation: this.animation })
+  },
+  closeBottom: function () {
+    this.setData({
+      showTools: true,
+      showEmoji: true
+    });
+  }
 })
-function connect() {
+function connect(callback) {
+  var that = this;
   wx.connectSocket({
     url: 'wss://www.er567.cn/ws',
     success: function (res) {
-      this.setData({
-        isOpen: true,
-        statusMsg: '已连接'
-      });
+      //has no fucking this 
     }
   });
 }

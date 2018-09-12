@@ -2,5 +2,6 @@
   "usingComponents": {
     "movable": "../../components/movable/movable"
   },
-  "enablePullDownRefresh": true
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "一言"
 }
