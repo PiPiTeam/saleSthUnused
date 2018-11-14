@@ -3,7 +3,7 @@ page,.wrap{
   height:100%;
 }
 .wrap{
-  background-image: url('http://ofj8a2i7u.bkt.clouddn.com/image/ph/bg.jpgbg.jpg');
+  background-image: url('//p9sgo47pc.bkt.clouddn.com/wx/yiyan/1.png');
   background-size: 100%;
   background-repeat: no-repeat;
 }

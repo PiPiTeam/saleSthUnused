@@ -8,9 +8,9 @@
     "pages/chat/chat",
     "pages/blog/blog",
     "pages/debunk/debunk"
-  ],
+   ],
   "window": {
-    "navigationBarTitleText": "hitokoto",
+    "navigationBarTitleText": "一言",
     "navigationBarTextStyle": "black",
     "navigationBarBackgroundColor": "#fff"
   },
