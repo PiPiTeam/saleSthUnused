@@ -91,17 +91,17 @@ Page({
     clearInterval(this.data.yiyanTimer);
     if (this.data.isPlay) {
       this.data.dragImg = '/image/play.png';
-      wx.showToast({
-        title: "已暂停",
-        duration: 1000,
-      })
+      // wx.showToast({
+      //   title: "已暂停",
+      //   duration: 1000,
+      // })
     }else{
       this.data.dragImg = '/image/stop.png';
       this.data.yiyanTimer = setInterval(this.getYiyan, 8000);
-      wx.showToast({
-        title: "已开始",
-        duration: 1000,
-      })
+      // wx.showToast({
+      //   title: "已开始",
+      //   duration: 1000,
+      // })
     }
     this.setData({ isPlay: !this.data.isPlay });
   }
