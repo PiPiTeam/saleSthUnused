@@ -1,5 +1,4 @@
 <movable-area class='movable-box'>
-  <slot/>
   <movable-view
     class='movable-btn'
     x='{{x}}'

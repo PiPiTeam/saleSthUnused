@@ -1,0 +1,94 @@
+/* pages/message/message.wxss */
+.back{
+  float: right;
+  color: orangered;
+}
+.status{
+  font-size:30rpx;
+  color:green;
+}
+.red{
+  color: red;
+}
+/* pages/chat/chat.wxss */
+page, .chat-wrap{
+  height: 100%;
+}
+.chat-box {
+  height: 100%;
+  background-color: #f4f4f3; 
+}
+.chat-contain{
+  height: 85%;
+  background-color: #f4f4f3; 
+  overflow: scroll;
+}
+.chat-contain.active{
+  height: calc(85% - 240rpx);
+}
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* height: 15%; */
+  /* height: 176rpx; */
+  background-color: #fafafa;
+  border-top: 1rpx solid #E1E1E1;
+}
+.footer .tools{
+  line-height: 84rpx;
+  font-size: 22rpx;
+  color: #999;
+  padding: 0 30rpx;
+}
+.footer .tools text{
+  margin: 0 10rpx;
+  padding: 10rpx 18rpx;
+  border: 1rpx solid #CECECE;
+  border-radius: 22rpx;
+  background-color: #fff;
+}
+.input-box {
+  display: flex;
+  padding-left: 30rpx;
+}
+.input-box input{
+  /* width: 510rpx; */
+  flex: 1 0 80%;
+  height: 70rpx;
+  line-height: 70rpx;
+  background-color: #fff;
+  border: 1rpx solid #CECECE;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+  margin-bottom: 24rpx;
+}
+.input-placeholder{
+  color: #ccc;
+  font-weight: 400;
+}
+.input-box .icon-box{
+  flex: 1 0 20%;
+  height: 70rpx;
+  line-height: 70rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-box .icon-box image{
+  width: 55rpx;
+  height: 55rpx;
+  margin:0 10rpx;
+}
+.input-box .icon-box image:first-child{
+  margin-right: 0;
+}
+.tools-box, .emoji-box{
+  height: 240rpx;
+  border-top: 1rpx solid #E1E1E1;
+}
+.tools-box .inner, .emoji-box .inner{
+  transition:transform 4000ms ease 0ms;
+  transform:translateY(100px);
+  transform-origin:50% 50% 0px;
+}
