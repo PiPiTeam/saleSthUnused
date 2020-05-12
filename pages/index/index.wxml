@@ -1,54 +1,12 @@
 <!--index.wxml-->
-<view class="wrap">
-  <scroll-view scroll-y class="goods-list">
-    <view class="goods-item">
-      <view class="item item-l">
-        <image src='/image/1.png'></image>
-      </view>
-      <view class="item item-r">
-        <text>阿拉德大陆，是网络游戏《地下城与勇士》游戏中的主体设定，是玩家控制的冒险家主要的活动地区。阿拉德大陆的文明之光最初是由精灵和人类共同创造的，但是后来由于双方关系破裂，精灵逐渐从阿拉德大陆上消失。</text>
-      </view>
-    </view>
-    <view class="goods-item">
-      <view class="item item-l">
-        <image src='/image/2.png'></image>
-      </view>
-      <view class="item item-r">
-        <text>玩家控制的冒险家主要的活动地区。阿拉德大陆的文明之光最初是由精灵和人类共同创造的，但是后来由于双方关系破裂，精灵逐渐从阿拉德大陆上消失。</text>
-      </view>
-    </view>
-    <view class="goods-item">
-      <view class="item item-l">
-        <image src='/image/3.png'></image>
-      </view>
-      <view class="item item-r">
-        <text>《地下城与勇士》游戏中的主体设定，是玩家控制的冒险家主要的活动地区。阿拉德大陆的文明之光最初是由精灵和人类共同创造的，但是后来由于双方关系破裂，精灵逐渐从阿拉德大陆上消失。</text>
-      </view>
-    </view>
-    <view class="goods-item">
-      <view class="item item-l">
-        <image src='/image/3.png'></image>
-      </view>
-      <view class="item item-r">
-        <text>阿拉德游戏中的主体设定，是玩家控制的冒险家主要的活动地区。阿拉德大陆的文明之光最初是由精灵和人类共同创造的，但是后来由于双方关系破裂，精灵逐渐从阿拉德大陆上消失。</text>
-      </view>
-    </view>
-    <view class="goods-item">
-      <view class="item item-l">
-        <image src='/image/4.png'></image>
-      </view>
-      <view class="item item-r">
-        <text>阿拉德游戏中的主体设定，是玩家控制的冒险家主要的活动地区。阿拉德大陆的文明之光最初是由精灵和人类共同创造的，但是后来由于双方关系破裂，精灵逐渐从阿拉德大陆上消失。</text>
-      </view>
-    </view>
-    <view class="goods-item">
-      <view class="item item-l">
-        <image src='/image/4.png'></image>
-      </view>
-      <view class="item item-r">
-        <text>阿拉德游戏中的主体设定，是玩家控制的冒险家主要的活动地区。阿拉德大陆的文明之光最初是由精灵和人类共同创造的，但是后来由于双方关系破裂，精灵逐渐从阿拉德大陆上消失。</text>
-      </view>
-    </view>
-  </scroll-view>
-  <van-notify id="custom-selector" />
+<view class="warp">
+  <van-cell-group title-width="">
+    <van-cell title="短视频去水印" is-link url="/pages/favorites/favorites">
+      <van-icon slot="icon" name="like-o" style="margin-right:10rpx;"></van-icon>
+    </van-cell>
+    <van-cell title="视频去水印" is-link url="/pages/debunk/debunk">
+      <van-icon slot="icon" name="pending-evaluate" style="margin-right:10rpx;"></van-icon>
+    </van-cell>
+  </van-cell-group>
 </view>
+<!-- <van-toast id="van-toast" /> -->

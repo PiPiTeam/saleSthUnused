@@ -1,29 +1,41 @@
 /**index.wxss**/
-.goods-list .goods-item{
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:120rpx 0;
+  background-image: url('http://jingye.me/blogPhoto/min_photos/2018-02-01_%E6%A9%98%E5%AD%90%E6%B4%B2%E7%83%9F%E8%8A%B12.min.jpg');
+  background-size: 100% 100%;
+
+}
+
+.userinfo-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 20rpx 20rpx 0 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color:#fff;
+  font-weight:600;
+}
+.tools{
+  width: 100%;
+  height: 150rpx;
   display: flex;
 }
-.goods-list .goods-item .item{
-  height: 200rpx;
-  margin-bottom: 20rpx;
-}
-.goods-list .goods-item .item image{
-  width: 200rpx;
-  height: 200rpx;
-}
-.goods-list .goods-item .item-l{
+.tools .item-box{
   flex: 1;
+  margin: 10px 20px;
+  box-sizing: border-box;
+  text-align: center;
 }
-.goods-list .goods-item .item-r{
-  flex: 2;
+.tools .item-box image{
+  width: 70%;
+  border-radius: 20rpx;
 }
-.goods-list .goods-item .item-r text{
-  line-height:50rpx;
-  overflow: hidden;
-  text-overflow:ellipsis;
-  display:-webkit-box; 
-  -webkit-box-orient:vertical;
-  -webkit-line-clamp:4; 
-  text-indent:60rpx;
-  font-size:30rpx;
-
+.tools .item-box .item-name{
+  font-size: 24rpx;
+  color: #333;
 }

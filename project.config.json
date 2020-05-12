@@ -13,8 +13,10 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.2.5",
 	"appid": "wxc56d46c5fb6a06a2",
-	"projectname": "Hitokoto",
+	"projectname": "%E6%9C%80%E5%BF%AB%E5%8E%BB%E6%B0%B4%E5%8D%B0",
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

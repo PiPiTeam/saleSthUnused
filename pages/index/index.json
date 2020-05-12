@@ -1,6 +1,9 @@
 {
-  "navigationBarTitleText": "广场",
+  "navigationBarTitleText": "最快去水印",
   "usingComponents": {
-    "van-notify": "/vant-weapp/notify/index"
+    "van-cell-group": "/vant-weapp/cell-group/index",
+    "van-cell": "/vant-weapp/cell/index",
+    "van-icon": "/vant-weapp/icon/index",
+    "van-toast": "/vant-weapp/toast/index"
   }
 }

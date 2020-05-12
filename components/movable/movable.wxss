@@ -13,7 +13,7 @@
   border-radius: 50%;
   font-size: 30rpx;
 }
-.movable-btn image {
+.movable-btn .image {
   -webkit-animation: rotate 3s linear infinite;
   -moz-animation: rotate 3s linear infinite;
   -o-animation: rotate 3s linear infinite;

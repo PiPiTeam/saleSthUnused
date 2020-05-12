@@ -5,6 +5,6 @@
     y='{{y}}'
     direction='all'
     bindtap='onTap'>
-    <image mode='aspectFit' src="{{isPlay? '/image/stop.png':'/image/play.png'}}" style='width:40px;height:40px;'></image>
+    <image class="image" mode='aspectFit' src="{{isPlay? '/image/stop.png':'/image/play.png'}}" style='width:40px;height:40px;'></image>
   </movable-view>
 </movable-area>
