@@ -7,11 +7,24 @@
 		"urlCheck": true,
 		"es6": true,
 		"postcss": true,
+		"preloadBackgroundData": false,
 		"minified": true,
-		"newFeature": true
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.2.5",
+	"libVersion": "2.10.4",
 	"appid": "wxc56d46c5fb6a06a2",
 	"projectname": "%E6%9C%80%E5%BF%AB%E5%8E%BB%E6%B0%B4%E5%8D%B0",
 	"isGameTourist": false,

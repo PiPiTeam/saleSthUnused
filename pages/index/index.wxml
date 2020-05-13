@@ -1,11 +1,8 @@
 <!--index.wxml-->
 <view class="warp">
   <van-cell-group title-width="">
-    <van-cell title="短视频去水印" is-link url="/pages/favorites/favorites">
+    <van-cell title="视频去水印(ks/dy)" is-link url="/pages/debunk/debunk">
       <van-icon slot="icon" name="like-o" style="margin-right:10rpx;"></van-icon>
-    </van-cell>
-    <van-cell title="视频去水印" is-link url="/pages/debunk/debunk">
-      <van-icon slot="icon" name="pending-evaluate" style="margin-right:10rpx;"></van-icon>
     </van-cell>
   </van-cell-group>
 </view>

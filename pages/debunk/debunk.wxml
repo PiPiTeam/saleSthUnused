@@ -1,2 +1,22 @@
 <!--pages/debunk/debunk.wxml-->
-<text>反馈吐槽</text>
+<view>
+  <view class="input-box">
+    <input class="input" name="url" value="{{url}}" placeholder="点击这里输入或粘贴视频链接" bindinput="urlInput" />
+  </view>
+  <view class="btn-box">
+    <van-button type="default" bindtap="getClipboardData">粘贴</van-button>
+    <van-button type="primary" bindtap="Resolution">{{btnTxt}}</van-button>
+    <van-button type="danger" bindtap="clearUrl">清空</van-button>
+  </view>
+  <view class="result-btn" wx:if="{{requestData.url}}">
+    <view class="row">
+      <van-button type="primary" data-link="{{requestData.url}}" bindtap="handleDownload">下载无水印视频</van-button>
+      <van-button type="primary" data-link="{{requestData.img}}" bindtap="handleDownload">下载视频封面</van-button>
+    </view>
+    <view class="row">
+      <van-button type="primary" data-link="{{requestData.url}}" bindtap="setClipboardData">复制无水印链接</van-button>
+      <van-button type="primary" data-link="{{requestData.img}}" bindtap="setClipboardData">复制封面链接</van-button>
+    </view>
+  </view>
+  <van-toast id="van-toast" />
+</view>

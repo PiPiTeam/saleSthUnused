@@ -35,6 +35,6 @@ App({
   },
   globalData: {
     userInfo: null,
-    baseUrl: 'https://er567.cn'
+    baseUrl: 'https://er567.cn/'
   }
 })

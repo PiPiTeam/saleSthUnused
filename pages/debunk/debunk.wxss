@@ -1,1 +1,25 @@
 /* pages/debunk/debunk.wxss */
+.input-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 100rpx;
+}
+.input-box .input {
+  width: 90%;
+  background: #eee;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 20rpx;
+  font-size: 26rpx;
+  padding: 0 10px;
+}
+.btn-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+}
+.result-btn .row {
+  display: flex;
+  justify-content: space-around;
+  margin:10rpx 0;
+}

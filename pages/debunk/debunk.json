@@ -1,3 +1,7 @@
 {
-  "navigationBarTitleText": "最快去水印"
+  "navigationBarTitleText": "最快去水印",
+  "usingComponents": {
+    "van-button": "/vant-weapp/button/index",
+    "van-toast": "/vant-weapp/toast/index"
+  }
 }

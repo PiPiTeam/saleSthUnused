@@ -3,5 +3,5 @@
     "movable": "../../components/movable/movable"
   },
   "enablePullDownRefresh": true,
-  "navigationBarTitleText": "一言"
+  "navigationBarTitleText": "短句子"
 }

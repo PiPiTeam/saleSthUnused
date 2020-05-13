@@ -2,7 +2,6 @@
   "pages": [
     "pages/index/index",
     "pages/yiyan/yiyan",
-    "pages/favorites/favorites",
     "pages/debunk/debunk"
   ],
   "window": {
@@ -24,7 +23,7 @@
         "pagePath": "pages/yiyan/yiyan",
         "iconPath": "/image/my.png",
         "selectedIconPath": "/image/my_active.png",
-        "text": "一句话"
+        "text": "短句子"
       }
     ]
   },
