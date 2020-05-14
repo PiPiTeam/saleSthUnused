@@ -1,5 +1,7 @@
 const dsp = 'dsp'
+const vedioDsp = 'api/video/parse'
 
 module.exports = {
-  dsp
+  dsp,
+  vedioDsp
 }

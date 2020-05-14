@@ -130,6 +130,13 @@ Page({
         url: encodeURI(url)
       }
       api.get(dsp, params).then(res => {
+        if (res.data && res.data.url) {
+          if(res.data.url.split('https').length === 1){
+            res.data.url = res.data.url.replace('http://','https://');
+            res.data.img = res.data.img.replace('http://','https://');
+          }
+        }
+        console.log(res.data)
         _this.setData({
           requestData: res.data
         })
